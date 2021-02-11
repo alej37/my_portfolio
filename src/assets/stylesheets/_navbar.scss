@@ -2,7 +2,7 @@
   background: rgb(30, 35, 42);
   position: sticky;
   top:0;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 960px) {
   .navbarItems{
-
+    position: relative;
     .menu-icon {
     display: block;
     position: absolute;
