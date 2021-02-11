@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 
 class Contact extends Component {
@@ -22,21 +22,21 @@ class Contact extends Component {
     })
   }
 
-  // sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs.sendForm('service_jm7r9di', 'template_27izlai', e.target, 'user_6UNY0TL4EAxQRD7ErWx6G')
-  //     .then((result) => {
-  //       console.log(result.text);
-  //     }, (error) => {
-  //       console.log(error.text);
-  //     });
-  //   this.setState({
-  //     firstName: '',
-  //     lastName: '',
-  //     email: '',
-  //     message: ''
-  //   })
-  // }
+  sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_jm7r9di', 'template_27izlai', e.target, 'user_6UNY0TL4EAxQRD7ErWx6G')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    this.setState({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: ''
+    })
+  }
 
 
   render() {
