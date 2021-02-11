@@ -7,14 +7,12 @@ class Intro extends Component {
       <div id="home" className="intro">
         <Typewriter
           onInit={(typewriter) => {
-            typewriter.typeString('Hello!')
+            typewriter.typeString('Welcome')
               .pauseFor(1000)
               .deleteAll(10)
-            typewriter.typeString('I am a <span style= "color: #84abe9">Web Developer</span> <br>')
+            typewriter.typeString('<span style= "color: #84abe9">Web Developer</span>')
               .pauseFor(1000)
             // .deleteAll(10)
-            typewriter.typeString(' and a <span style= "color: #84abe9">Freelance Cellist</span>')
-              .pauseFor(1000)
               .deleteAll(10)
             typewriter.typeString('<span style = "color: #84abe9" >Alejandro Calzadilla</span>')
               .start()
