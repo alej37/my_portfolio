@@ -26,7 +26,7 @@ class Navbar extends Component {
       prevScrollpos: currentScrollPos,
       visible
     });
-    if (window.innerWidth < 900) {
+    if (window.innerWidth < 960) {
       this.setState({
         visible: true
       })
