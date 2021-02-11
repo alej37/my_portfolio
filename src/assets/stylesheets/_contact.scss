@@ -104,3 +104,14 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .contact{
+    .contact-box{
+      form{
+        margin-left: 0;
+      }
+    }
+
+  }
+}
