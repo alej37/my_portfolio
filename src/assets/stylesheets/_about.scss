@@ -17,6 +17,16 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .about{
+    .text-box{
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 // @media screen and (max-width: 960px) {
 //   .about{
 //     .text-box{

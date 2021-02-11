@@ -106,10 +106,12 @@
 }
 
 @media screen and (max-width: 400px) {
-  .project-cards{
-    .image{
-      width: 200px;
-      height: 200px;
+  .projects{
+    .project-cards{
+      .image{
+        width: 250px;
+        height: 120px;
+      }
     }
   }
 }

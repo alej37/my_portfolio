@@ -29,6 +29,15 @@ ul li{
   list-style: none;
 }
 
+@media screen and (max-width: 400px) {
+  body{
+    h1{
+      font-size: 32px;
+    }
+
+
+  }
+}
 
 // .intro-navbar {
 //   height: 900px;
