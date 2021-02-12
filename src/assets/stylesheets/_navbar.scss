@@ -1,7 +1,5 @@
 .navbarItems{
   background: rgb(30, 35, 42);
-  position: sticky;
-  top:0;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -36,9 +34,9 @@
   }
 }
 
-.navbarItems--hidden{
-  top:50px;
-}
+// .navbarItems--hidden{
+//   top:50px;
+// }
 
 
 .nav-menu > .active{
