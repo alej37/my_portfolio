@@ -1,9 +1,6 @@
 .navbarItems{
-  visibility: visible;
-  transition: all 0.2s;
   background: rgb(30, 35, 42);
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top:0;
   height: 80px;
   display: flex;
@@ -39,12 +36,9 @@
   }
 }
 
-.navbarItems--hidden{
-  top:50px;
-  visibility: hidden;
-  transition: all 0.2s;
-  transform: translateY(-100%)
-}
+// .navbarItems--hidden{
+//   top:50px;
+// }
 
 
 .nav-menu > .active{
