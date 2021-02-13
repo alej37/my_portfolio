@@ -9,6 +9,8 @@ class Navbar extends Component {
     super(props);
     this.state = {
       clicked: false,
+      show: true,
+      scrollPos: 0
     };
   }
 
@@ -16,11 +18,32 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked })
   }
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    this.setState({
+      scrollPos: document.body.getBoundingClientRect().top,
+      show: document.body.getBoundingClientRect().top > this.state.scrollPos
+    });
+    if (window.innerWidth < 960) {
+      this.setState({
+        show: true
+      })
+    }
+  }
+
+
 
 
   render() {
     return (
-      <nav className="navbarItems">
+      <nav className={this.state.show ? "navbarItems" : "navbarItems--hidden"}>
         <div className="menu-icon" onClick={this.handleCLick}>
           {this.state.clicked ? <FaTimes className="MobileIcon" /> : <FaBars className="MobileIcon" />}
         </div>

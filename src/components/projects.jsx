@@ -12,7 +12,7 @@ class Projects extends Component {
               <img className='image__img' src="https://source.unsplash.com/p0QUpDUX8X8" alt="stuud" />
               <a href=" https://www.stuud.app/" target="blank">
                 <div className="image__overlay image__overlay--blur">
-                  <div className="image__title"><a href="https://www.stuud.app/" target="blank">Stuud</a></div>
+                  <div className="image__title">Stuud</div>
                   <p className="image__description">A web agenda for freelancers!</p>
                 </div>
               </a>
@@ -23,7 +23,7 @@ class Projects extends Component {
               <img className='image__img' src="https://source.unsplash.com/Jvqia3_ljfY" alt="dawg" />
               <a href="https://dawg-lewagon.herokuapp.com/" target="blank">
                 <div className="image__overlay image__overlay--blur">
-                  <div className="image__title"><a href="https://dawg-lewagon.herokuapp.com/" target="blank">Dawg</a></div>
+                  <div className="image__title">Dawg</div>
                   <p className="image__description">Comedic dog rental marketplace</p>
                 </div>
               </a>
